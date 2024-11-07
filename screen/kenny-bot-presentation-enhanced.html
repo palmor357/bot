@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <style>
         .slide {
@@ -8,29 +9,35 @@
             border: 1px solid #ddd;
             border-radius: 8px;
         }
+
         .title {
             font-size: 2em;
             color: #0088cc;
             margin-bottom: 10px;
         }
+
         .subtitle {
             font-size: 1.5em;
             color: #666;
             margin-bottom: 20px;
         }
+
         .content {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
+
         .text {
             flex: 1;
             padding-right: 20px;
         }
+
         .illustration {
             flex: 1;
             text-align: center;
         }
+
         .telegram-link {
             background: #0088cc;
             color: white;
@@ -40,6 +47,7 @@
             display: inline-block;
             margin-top: 20px;
         }
+
         .telegram-info {
             background: #f8f9fa;
             border: 1px solid #0088cc;
@@ -48,42 +56,242 @@
             margin-top: 20px;
             text-align: center;
         }
+
         .telegram-handle {
             font-family: monospace;
             font-size: 1.2em;
             color: #0088cc;
             margin: 10px 0;
         }
+
+        .illustration img {
+            width: 100%;
+            height: auto;
+            max-width: 400px;
+            /* ajusta el ancho máximo */
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0088cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .screenshots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+
+        }
     </style>
 </head>
+
 <body>
 
-<div class="slide">
-    <div class="title">Kenny Bot 🤖</div>
-    <div class="subtitle">Tu asistente para buscar informes</div>
-    <div class="content">
-        <div class="text">
-            <h2>Bot de Telegram para buscar informes médicos de manera rápida y segura</h2>
-            <div class="telegram-info">
-                <p>Encuentra nuestro bot en Telegram:</p>
-                <div class="telegram-handle">@sistema_informes_hggb_bot</div>
-                <a href="https://t.me/sistema_informes_hggb_bot" class="telegram-link">Acceder al Bot</a>
+    <div class="slide">
+        <div class="title">Kenny Bot 🤖</div>
+        <div class="subtitle">Tu asistente para buscar informes</div>
+        <div class="content">
+            <div class="text">
+                <h2>Bot de Telegram para buscar informes médicos de manera rápida y segura</h2>
+                <div class="telegram-info">
+                    <p>Encuentra nuestro bot en Telegram:</p>
+                    <div class="telegram-handle">@sistema_informes_hggb_bot</div>
+                    <a href="https://t.me/sistema_informes_hggb_bot" class="telegram-link">Acceder al Bot</a>
+                </div>
+            </div>
+            <div class="illustration">
+                <img src="https://cdn1.cdn-telegram.org/file/e_XDRmftFCsO21ywsM2UVwCfxjHQlL-iVTKemRUKzkOVKYgNbQU4nLCJp3JfqOn4QBxWylugBUehL2GCp3Pv00wzjGKfz_QdZ_KYRn6Lom89ZsQmJ28hTLahoV5L2i1zBG8ikNTCg63EI0BNcUVHv_2wXhl7mRABE2979T81iSzJVgL1R8dq3JIlqppipZ6tbYmcq6jJy6kFI8GmWSiynd5FUHKyr7nfYjWY-NUTiwKDjFnKaDTAcaygHYeUKNGXZEEZ7UvoataTHydSpUcgLC1qDBYkojEMfhtzeIRShWrSXtpzJWBnhKXchva8OqCE5GazNea04WfRSncTXXKevg.jpg"
+                    alt="Kenny Bot Logo" />
             </div>
         </div>
-        <div class="illustration">
-            <svg viewbox="0 0 200 200" width="200" height="200">
-                <circle cx="100" cy="100" r="90" fill="#0088cc"></circle>
-                <rect x="60" y="70" width="80" height="100" rx="10" fill="white" />
-                <circle cx="100" cy="60" r="20" fill="#0088cc"></circle>
-                <rect x="70" y="90" width="60" height="8" rx="4" fill="#0088cc" />
-                <rect x="70" y="110" width="60" height="8" rx="4" fill="#0088cc" />
-                <rect x="70" y="130" width="60" height="8" rx="4" fill="#0088cc" />
-            </svg>
+    </div>
+
+    <div class="slide">
+        <div class="title">¿Qué puedo hacer con Kenny?</div>
+        <div class="content">
+            <div class="text">
+                <ul>
+                    <li>Registrar mi número y recibir informes</li>
+                    <li>Buscar informes médicos por RUT</li>
+                    <li>Recibir datos de contacto del laboratorio</li>
+                    <li>Interactuar con el bot mediante comandos y mensajes</li>
+                </ul>
+            </div>
+            <div class="illustration">
+                <div class="screenshots">
+                    <img src="https://palmor357.github.io/bot/screen/kenny func rut.png"
+                        alt="Kenny funcionalidad RUT" />
+                    <img src="https://palmor357.github.io/bot/screen/func registrar.png" alt="Función registrar" />
+                    <img src="https://palmor357.github.io/bot/screen/func contacto.png" alt="Función contacto" />
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
-[El resto de las slides permanecen igual...]
+    <div class="slide">
+        <div class="title">Sistema y Seguridad</div>
+        <div class="content">
+            <div class="text">
+                <h2>Infraestructura Robusta y Segura</h2>
+                <ul>
+                    <li>Base de datos Firebase</li>
+                    <li>Código optimizado</li>
+                    <li>Verificación segura</li>
+                    <li>Protección de datos</li>
+                </ul>
+            </div>
+            <div class="illustration">
+                <div class="screenshots">
+                    <img src="https://palmor357.github.io/bot/screen/code.png" alt="Código del sistema" width="300"
+                        height="150" />
+                    <svg width="100px" height="100px" viewBox="0 0 240 240" id="svg2" xmlns="http://www.w3.org/2000/svg"><style>.st0{fill:url(#path2995-1-0_1_)}.st1{fill:#c8daea}.st2{fill:#a9c9dd}.st3{fill:url(#path2991_1_)}</style><linearGradient id="path2995-1-0_1_" gradientUnits="userSpaceOnUse" x1="-683.305" y1="534.845" x2="-693.305" y2="511.512" gradientTransform="matrix(6 0 0 -6 4255 3247)"><stop offset="0" stop-color="#37aee2"/><stop offset="1" stop-color="#1e96c8"/></linearGradient><path id="path2995-1-0" class="st0" d="M240 120c0 66.3-53.7 120-120 120S0 186.3 0 120 53.7 0 120 0s120 53.7 120 120z"/><path id="path2993" class="st1" d="M98 175c-3.9 0-3.2-1.5-4.6-5.2L82 132.2 152.8 88l8.3 2.2-6.9 18.8L98 175z"/><path id="path2989" class="st2" d="M98 175c3 0 4.3-1.4 6-3 2.6-2.5 36-35 36-35l-20.5-5-19 12-2.5 30v1z"/><linearGradient id="path2991_1_" gradientUnits="userSpaceOnUse" x1="128.991" y1="118.245" x2="153.991" y2="78.245" gradientTransform="matrix(1 0 0 -1 0 242)"><stop offset="0" stop-color="#eff7fc"/><stop offset="1" stop-color="#ffffff"/></linearGradient><path id="path2991" class="st3" d="M100 144.4l48.4 35.7c5.5 3 9.5 1.5 10.9-5.1L179 82.2c2-8.1-3.1-11.7-8.4-9.3L55 117.5c-7.9 3.2-7.8 7.6-1.4 9.5l29.7 9.3L152 93c3.2-2 6.2-.9 3.8 1.3L100 144.4z"/></svg>
+                </div>
+            </div>
+            <div>
+                <img src="https://palmor357.github.io/bot/screen/firebase.png" alt="Firebase Database" width="100"
+                height="100" />
+            </div>
 
+        </div>
+    </div>
+    <!-- Slide 8: Conclusión -->
+    <div class="slide">
+        <div class="title">Kenny está aquí para ayudarte</div>
+        <div class="content">
+            <div class="text">
+                <ul class="bullet-points">
+                    <li>Acceso instantáneo a tus informes</li>
+                    <li>Soporte continuo</li>
+                    <li>Seguridad garantizada</li>
+                    <li>Búsqueda eficiente</li>
+                </ul>
+            </div>
+            <div class="illustration">
+                <div class="screenshots">
+                    <svg viewBox="0 0 200 200" width="200" height="200">
+                        <circle cx="100" cy="100" r="90" fill="#0088cc" />
+                        <path d="M60 100 L90 130 L140 70" stroke="white" stroke-width="12" fill="none" />
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Slide 6: Ejemplos de Uso -->
+    <div class="slide">
+        <div class="title">Ejemplos de Uso</div>
+        <div class="content">
+            <div class="text">
+                <ul class="bullet-points">
+                    <li>Iniciar con /start o "Hola"</li>
+                    <li>Buscar informe con /rut</li>
+                    <li>Registrarse con /registrar</li>
+                    <li>Obtener contacto con /contacto</li>
+                </ul>
+            </div>
+            <div class="illustration">
+                <div class="screenshots">
+                    <img src="https://palmor357.github.io/bot/screen/start.png" alt="Inicio sistema" />
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Slide 3: Registro de Usuario -->
+    <div class="slide">
+        <div class="title">Registro de Usuario</div>
+        <div class="content">
+            <div class="text">
+                <h2>Comando: /registrar</h2>
+                <ul class="bullet-points">
+                    <li>Proceso simple y seguro</li>
+                    <li>Almacenamiento en Firebase</li>
+                    <li>Verificación de identidad</li>
+                    <li>Alta controlada por administradores</li>
+                </ul>
+            </div>
+            <div class="illustration">
+                <div class="screenshots">
+                    <img src="https://palmor357.github.io/bot/screen/func registrar.png" alt="Función registrar" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 4: Búsqueda de Informes -->
+    <div class="slide">
+        <div class="title">Búsqueda de Informes</div>
+        <div class="content">
+            <div class="text">
+                <h2>Comando: /rut</h2>
+                <ul class="bullet-points">
+                    <li>Búsqueda por RUT del paciente</li>
+                    <li>Acceso inmediato a informes</li>
+                    <li>Enlaces seguros de descarga</li>
+                    <li>Estado de informes pendientes</li>
+                </ul>
+            </div>
+            <div class="illustration">
+                <div class="screenshots">
+                    <img src="https://palmor357.github.io/bot/screen/kenny func rut.png"
+                        alt="Kenny funcionalidad RUT" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Slide 7: Ventajas -->
+    <div class="slide">
+        <div class="title">Ventajas de usar Kenny</div>
+        <div class="content">
+            <div class="text">
+                <ul class="bullet-points">
+                    <li>✨ Acceso rápido a informes médicos</li>
+                    <li>🔒 Seguridad y privacidad</li>
+                    <li>👥 Interfaz fácil de usar</li>
+                    <li>⚡ Disponible las 24 horas</li>
+                </ul>
+            </div>
+            <div class="illustration">
+                <svg viewBox="0 0 200 200" width="200" height="200">
+                    <polygon points="100,20 180,180 20,180" fill="#0088cc" />
+                    <circle cx="100" cy="100" r="30" fill="white" />
+                    <path d="M85 100 L95 110 L115 90" stroke="#0088cc" stroke-width="5" fill="none" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="slide">
+        <div class="title">Contacto y Soporte</div>
+        <div class="content">
+            <div class="text">
+                <h2>Disponible 24/7</h2>
+                <ul>
+                    <li>📧 citometriahggb@gmail.com</li>
+                    <li>📞 +56 41220533</li>
+                    <li>🤖 @sistema_informes_hggb_bot</li>
+                    <li>⚡ Respuesta inmediata</li>
+                </ul>
+            </div>
+            <div class="illustration">
+                <svg viewBox="0 0 200 200" width="200" height="200">
+                    <circle cx="100" cy="100" r="70" fill="#0088cc" />
+                    <path d="M60 80 L140 80 L100 120 Z" fill="white" />
+                    <circle cx="100" cy="140" r="15" fill="white" />
+                </svg>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
